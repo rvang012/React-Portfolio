@@ -7,7 +7,6 @@ import {
 } from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./views/home";
-import EntryPage from "./views/entrypage";
 import Contact from "./views/contact";
 
 
@@ -15,18 +14,14 @@ function App() {
   return (
       <div>
         <Router>
-        <Header />
         <div>
           <div className="container">
           </div>
           <Switch>
-            <Route exact path = "/React-Portfolio/">
-              <EntryPage />
-             </Route>
-             <Route path= "/React-Portfolio/home">
+             <Route exact path= "/">
                <Home />
                </Route>
-               <Route path="/React-Portfolio/contact">
+               <Route path="/contact">
                  <Contact />
                </Route>
           </Switch>
