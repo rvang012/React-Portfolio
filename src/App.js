@@ -5,10 +5,9 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import Header from "./components/Header";
 import Home from "./views/home";
 import Contact from "./views/contact";
-
+import Project from "./views/project";
 
 function App() {
   return (
@@ -20,6 +19,9 @@ function App() {
           <Switch>
              <Route exact path= "/">
                <Home />
+               </Route>
+               <Route path="/project">
+                 <Project />
                </Route>
                <Route path="/contact">
                  <Contact />
