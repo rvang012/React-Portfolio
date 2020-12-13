@@ -1,15 +1,15 @@
-import React from 'react'
+import React from "react";
+import Jumbotron from "../components/Jumbotron";
 
 function About(){
     return(
-        <div className="card">
-                <img className="w-75 p-3 d-inline-block" src={process.env.PUBLIC_URL + "public/photos/profilepic.png"} alt="profile" />
-                <hr />
-                <div className="card-body">
-                    <p>Hello, my name is Ruth.</p>
-                
-                </div>
+        <div>
+            <div className="container-fluid entrypage-bgimage">
+            <Jumbotron />
             </div>
+        </div>
     )
+
 }
+
 export default About;
