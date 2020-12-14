@@ -11,24 +11,22 @@ import Project from "./views/project";
 
 function App() {
   return (
-      <div>
-        <Router>
-        <div>
-          <div className="container">
-          </div>
-          <Switch>
-             <Route exact path= "/">
-               <Home />
-               </Route>
-               <Route path="/project">
-                 <Project />
-               </Route>
-               <Route path="/contact">
-                 <Contact />
-               </Route>
-          </Switch>
-      </div>
-    </Router>
+    <div>
+      <Router>
+       <div>
+        <Switch>
+          <Route exact path="/React-Portfolio/home">
+            <Home />
+          </Route>
+          <Route path="/React-Portfolio/project">
+            <Project />
+          </Route>
+          <Route path="/React-Portfolio/contact">
+            <Contact />
+          </Route>
+        </Switch>
+        </div>
+      </Router>
     </div>
   );
 }
